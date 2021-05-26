@@ -25,7 +25,7 @@ function generateDOM(array,index) {
     dob.innerText = moment(person.dob).format("MM DD, YYYY")
 
     let location = document.createElement("p")
-    let state = usStates
+    let state = function nameToAbbr("") ;
     location.innerHTML = person.location.street.number + " " + person.location.street.name + " " + person.location.city + " " + person.location.state + " " + person.location.postcode
 
     let email = document.createElement("p")
